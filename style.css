@@ -72,6 +72,9 @@
       .float-left {
         float: left;
       }
+      ul {
+        list-style: none;
+      }
       .section, footer {
         float: left;
         width: 100%;
@@ -242,7 +245,8 @@
       .form {
         margin: -10px 0 30px;
       }
-      form label, .hs-form-field label {
+      form label, form .hs_full_name > label, form .hs_email > label, 
+      form .ask_your_query_ > label, form .hs_mobilephone > label {
         display: none;
       }
       .title {
@@ -272,6 +276,11 @@
         width: 100%;
         overflow: hidden;
       }
+      .hs-fieldtype-intl-phone.hs-input input {
+        width: 100% !important;
+        margin-bottom: 40px !important;
+        float: none;
+      }
       form .input {
         position: relative;
     }
@@ -287,9 +296,11 @@
       }
       form .hs_email .input:before{
         background: url(assets/images/email.png) center/contain no-repeat;
+        height: 32px;
       }
       form .hs_mobilephone .input:before{
         background: url(assets/images/phone.png) center/contain no-repeat;
+        height: 25px;
       }
       form .hs-ask_your_query_ .input:before{
         background: url(assets/images/message.png) center/contain no-repeat;
@@ -304,12 +315,19 @@
         border: 0;
         box-shadow: none;
         background: none;
-        height: 50px;
+        height: 40px;
         background: #000;
         color: #fff;
         text-align: center;
         padding: 0;
       }
+      ul.hs-error-msgs.inputs-list {
+        font-size: 11px;
+        line-height: 17px;
+        position: absolute;
+        top: 53px;
+        color: #d40c18;
+     }
 
       /**** ads *****/
       .ads {
