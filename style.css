@@ -258,17 +258,17 @@
         background: 0 0;
         margin-bottom: 40px;
       }
-      form .name, form .email{
+      form .hs_full_name, form .hs_email{
         width: 50%;
         float: left;
       }
-      form .name{
+      form .hs_full_name{
         padding-right: 5px;
       }
-      form .email{
+      form .hs_email{
         padding-left: 5px;
       }
-      form .message, form .phone{
+      form .hs_query, form .hs_mobilephone{
         width: 100%;
         overflow: hidden;
       }
