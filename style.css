@@ -242,7 +242,7 @@
       .form {
         margin: -10px 0 30px;
       }
-      form label {
+      form label, .hs-form-field label {
         display: none;
       }
       .title {
