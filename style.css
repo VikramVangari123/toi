@@ -246,7 +246,7 @@
         max-width: 460px;
       }
       .section.form {
-        margin: -10px 0 40px;
+        margin: -10px 0 50px;
       }
       form .hs_full_name > label, form .hs_email > label, 
       form .ask_your_query_ > label, form .hs_mobilephone > label, .hs-fieldtype-textarea > label {
