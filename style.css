@@ -246,7 +246,7 @@
         margin: -10px 0 30px;
       }
       form label, form .hs_full_name > label, form .hs_email > label, 
-      form .ask_your_query_ > label, form .hs_mobilephone > label {
+      form .ask_your_query_ > label, form .hs_mobilephone > label, .hs-fieldtype-textarea > label {
         display: none;
       }
       .title {
@@ -276,10 +276,16 @@
         width: 100%;
         overflow: hidden;
       }
-      .hs-fieldtype-intl-phone.hs-input input {
+      form .hs_full_name, form .hs_email, form .hs-ask_your_query_, form .hs_mobilephone{
+        position: relative;
+      }
+      .hs_mobilephone .hs-fieldtype-intl-phone.hs-input input {
         width: 100% !important;
         margin-bottom: 40px !important;
         float: none;
+      }
+      .hs_mobilephone select{
+        display: none;
       }
       form .input {
         position: relative;
