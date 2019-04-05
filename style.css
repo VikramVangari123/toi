@@ -340,6 +340,7 @@
         text-align: center;
         padding: 0;
         text-transform: uppercase;
+        cursor: pointer;
       }
       ul.hs-error-msgs.inputs-list {
         font-size: 11px;
