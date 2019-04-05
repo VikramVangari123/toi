@@ -239,8 +239,11 @@
       }
 
       /**** form *****/
-      form {
-        margin: 10px 0 40px;
+      .form {
+        margin: -10px 0 30px;
+      }
+      form label {
+        display: none;
       }
       .title {
         font-size: 10px;
@@ -269,23 +272,26 @@
         width: 100%;
         overflow: hidden;
       }
-      form label:before{
+      form .input {
+        position: relative;
+    }
+      form .input:before{
         content: "";
         width: 20px;
         height: 22px;
         margin: 0;
         position: absolute;
       }
-      form .name label:before{
+      form .hs_full_name .input:before{
         background: url(assets/images/user.png) center/contain no-repeat;
       }
-      form .email label:before{
+      form .hs_email .input:before{
         background: url(assets/images/email.png) center/contain no-repeat;
       }
-      form .phone label:before{
+      form .hs_mobilephone .input:before{
         background: url(assets/images/phone.png) center/contain no-repeat;
       }
-      form .message label:before{
+      form .hs_query .input:before{
         background: url(assets/images/message.png) center/contain no-repeat;
       }
       .btn-submit {
