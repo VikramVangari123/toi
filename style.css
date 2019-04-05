@@ -268,7 +268,7 @@
       form .hs_email{
         padding-left: 5px;
       }
-      form .hs_query, form .hs_mobilephone{
+      form .hs-ask_your_query_, form .hs_mobilephone{
         width: 100%;
         overflow: hidden;
       }
@@ -291,18 +291,24 @@
       form .hs_mobilephone .input:before{
         background: url(assets/images/phone.png) center/contain no-repeat;
       }
-      form .hs_query .input:before{
+      form .hs-ask_your_query_ .input:before{
         background: url(assets/images/message.png) center/contain no-repeat;
       }
-      .btn-submit {
+      .hs_submit {
+        width: 100%;
+        text-align: center;
+      }
+      .hs-button{
+        max-width: 140px;
+        margin: 0 auto;        
         border: 0;
         box-shadow: none;
         background: none;
-        width: 100%;
-      }
-      .btn-submit img{
-        max-width: 140px;
-        margin: 0 auto;
+        height: 50px;
+        background: #000;
+        color: #fff;
+        text-align: center;
+        padding: 0;
       }
 
       /**** ads *****/
