@@ -28,7 +28,7 @@
     input::placeholder,
     textarea::placeholder,
     ::placeholder {
-    color: #808285 !important;
+    color: #444 !important;
     }
 
     a {
@@ -188,6 +188,9 @@
         .primary-btn .primary-btn-in {
           width: 19.6%;
         }
+        .primary-btn .primary-btn-in .btn{
+          max-width: 180px;
+        }
         .video .play-btn img {
           width: 70px;
         }
@@ -195,7 +198,7 @@
       
       .secondary-btn .secondary-btn-in {
         display: inline-block;
-        margin: 0px auto -5px;
+        margin: 0px auto;
         width: 49.3%;
         vertical-align: top;
       }
@@ -244,9 +247,11 @@
       /**** form *****/
       form {
         max-width: 460px;
+        margin: 0 auto;
       }
       .section.form {
-        margin: -10px 0 50px;
+        margin: 0px 0 50px;
+        padding: 0 3px
       }
       form .hs_full_name > label, form .hs_email > label, 
       form .ask_your_query_ > label, form .hs_mobilephone > label, .hs-fieldtype-textarea > label {
@@ -266,7 +271,7 @@
       form input, form textarea {
         width: 100%;
         border: 0;
-        border-bottom: 1px solid #000;
+        border-bottom: 1px solid #d8d8d8;
         padding: 3px 0 3px 30px;
         background: 0 0;
         margin-bottom: 40px;
@@ -325,11 +330,11 @@
         text-align: center;
       }
       .hs-button{
-        max-width: 130px;
+        max-width: 200px;
         margin: 0 auto;
         border: 0;
         box-shadow: none;
-        height: 35px;
+        height: 45px;
         background: #000;
         color: #fff;
         text-align: center;
@@ -352,11 +357,14 @@
 
       /**** ads *****/
       .ads {
-        margin-bottom: 40px;
+        margin-bottom: 12px;
       }
       .ads img{ 
         box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.1);
         transition: all 0.3s ease 0s;
+      }
+      .ads .ad_full {
+        margin-bottom: 8px;
       }
       .ads .ad_btm {
         width: 100%;
