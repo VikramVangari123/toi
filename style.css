@@ -278,21 +278,11 @@
         width: 100%;
         border: 0;
         border-bottom: 1px solid #d8d8d8;
-        padding: 3px 0 3px 30px;
+        padding: 3px 0px;
         background: 0 0;
-        margin-bottom: 40px;
+        margin-bottom: 30px;
       }
-      form .hs_full_name, form .hs_email{
-        width: 50%;
-        float: left;
-      }
-      form .hs_full_name{
-        padding-right: 5px;
-      }
-      form .hs_email{
-        padding-left: 5px;
-      }
-      form .hs-ask_your_query_, form .hs_mobilephone{
+      form .hs-ask_your_query_, form .hs_mobilephone, form .hs_full_name, form .hs_email{
         width: 100%;
         overflow: hidden;
       }
@@ -311,7 +301,7 @@
         position: relative;
     }
       form .input:before{
-        content: "";
+        content: none;
         width: 20px;
         height: 22px;
         margin: 0;
@@ -336,7 +326,7 @@
         text-align: center;
       }
       .hs-button{
-        max-width: 200px;
+        width: 80%;
         margin: 0 auto;
         border: 0;
         box-shadow: none;
