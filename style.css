@@ -392,13 +392,13 @@
         padding: 0;
         text-align: center;
         position: relative;
-        height: 75px;
+        height: 85px;
         margin-top: 120px;
       }
       footer .reachus{
         position: absolute;
-        right: 0px;
-        top: 22px;
+        right: 30px;
+        top: 30px;
         font-size: 12px;
       }
       .footer_logo{
@@ -420,9 +420,9 @@
           width: 64px;
         }
         footer .reachus{
-          right: -10px;
+          right: 10px;
         }        
         footer .reachus img{
-          width: 80%;
+          width: 70%;
         }
       }
