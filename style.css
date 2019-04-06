@@ -424,5 +424,6 @@
         }        
         footer .reachus img{
           width: 70%;
+          float: right;
         }
       }
