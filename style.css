@@ -116,7 +116,6 @@
         padding: 12px 0 0;
         width: 100%;
         z-index: 9999;
-        margin-bottom: -10px;
       }
       header .wowsome_logo{
           text-align: right;
@@ -124,15 +123,16 @@
       header .wowsome_logo img {
         width: 130px;
       }      
-      header .ford_logo img {
-        width: 200px;
+      header .jaguar_logo img {
+        width: 120px;
       }
-      header .ford_logo{
+      header .jaguar_logo{
           text-align: center;
+          margin: 20px 0;
       }
       /******* main content ********/
       .video video {
-          max-width: 100%;
+          width: 100%;
       }
       .video .video-block{
         position: relative;
@@ -166,16 +166,22 @@
           transform: translate(-50%, -50%);
       }
       .primary_cta {
-        margin: 10px 0 42px;
+        margin: 50px 0 42px;
       }
       .primary-btn {
         text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 0 -8px;
       }
       .primary-btn .primary-btn-in {
         display: inline-block;
-        margin: 30px auto -10px;
-        width: 32.5%;
+        margin: 0;
+        width: 33.3333%;
         vertical-align: top;
+        padding: 0 5px;
       }
       .primary-btn .primary-btn-in .btn {
         display: inline-block;
@@ -184,9 +190,9 @@
       .primary-btn .primary-btn-in .btn img {
         vertical-align: middle;
       }
-      @media (min-width: 768px) {
+      @media (min-width: 540px) {
         .primary-btn .primary-btn-in {
-          width: 19.6%;
+          width: 20%;
         }
         .primary-btn .primary-btn-in .btn{
           max-width: 180px;
@@ -359,37 +365,64 @@
       /**** ads *****/
       .ads {
         margin-bottom: 12px;
+        text-align: center;
       }
       .ads img{ 
-        box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.1);
+        /* box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.1); */
         transition: all 0.3s ease 0s;
+        vertical-align: middle;
       }
       .ads .ad_full {
-        margin-bottom: 8px;
+        margin-top: 4.5px;
       }
-      .ads .ad_btm {
+      .ads .ad_hlf {
         width: 100%;
         overflow: hidden;
         display: flex;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
       }
-      .ads .ad_btm1 {
-        margin-right: 10px;
+      .ads .ad_hlf1 {
+        margin-right: 4px;
       }
 
       footer{
-        background: #D41E03;
+        background-image: url(assets/images/footer-bg.png);
         padding: 0;
         text-align: center;
         position: relative;
-        overflow: hidden;
+        height: 75px;
+        margin-top: 120px;
       }
-      footer a{
+      footer .reachus{
         position: absolute;
-        right: 10px;
-        top: 10px;
+        right: 0px;
+        top: 22px;
         font-size: 12px;
+      }
+      .footer_logo{
+        text-align: left;
+        margin-left: 20px;
+        margin-top: -44px;
       }
       footer img{
         vertical-align: middle;
-        max-width: 90px;
+      }
+      @media (max-width: 479px){
+        footer{
+          margin-top: 100px;
+        }
+        .footer_logo{
+          margin-top: -34px;
+        }
+        .footer_logo img {
+          width: 64px;
+        }
+        footer .reachus{
+          right: -10px;
+        }        
+        footer .reachus img{
+          width: 80%;
+        }
       }
