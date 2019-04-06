@@ -121,7 +121,7 @@
           text-align: right;
       }
       header .wowsome_logo img {
-        width: 130px;
+        width: 170px;
       }      
       header .jaguar_logo img {
         width: 120px;
@@ -232,6 +232,12 @@
         margin-bottom: 40px;
       }
       @media (min-width: 992px) {
+        header .jaguar_logo img {
+          width: 180px;
+        }
+        header .wowsome_logo img {
+          width: 200px;
+        }
         .secondary-btn .secondary-btn-in {
           width: 33.3333%;
           vertical-align: top;
