@@ -222,7 +222,7 @@
         outline: none;
         margin-right: 3px;
         display: inline-block;
-        vertical-align: middle;
+        vertical-align: top;
         max-width: 14px;
       }
       .secondary_cta {
@@ -479,6 +479,12 @@
           float: right;
         }
       }
+      
+      @media (max-width: 479px){
+        .secondary_cta .secondary-btn-in{
+          font-size: 7px;
+        }
+      }
       @media (min-width: 480px) and (max-width: 991px){        
         .secondary-btn-in .btn img{
           max-width: 20px;
@@ -499,11 +505,12 @@
         }
         .secondary_cta .secondary-btn-in {
           font-size: 12px;
-          height: 40px;
-          line-height: 40px !IMPORTANT;
+          height: 45px;
+          line-height: 45px !IMPORTANT;
         }
         .secondary-btn-in .btn{
           line-height: 15px;   
           padding: 2px;
+          height: 45px;
         }
       }
