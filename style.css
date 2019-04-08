@@ -201,58 +201,104 @@
           width: 70px;
         }
       }
-      
+
       .secondary-btn .secondary-btn-in {
-        display: inline-block;
-        margin: 0px auto;
-        width: 49.3%;
+        width: 33.3333%;
         vertical-align: top;
+        text-align: center;
+        float: left;
+        display: initial;
       }
       .secondary-btn-in .btn {
-        display: inline-block;
-        max-width: 250px;
-        margin: 3px 0;
-      }
-      .secondary-btn-in:nth-child(odd) .btn {
-        margin-right: 3px;
-      }
-      .secondary-btn-in:nth-child(odd) {
-        text-align: right;
-      }
-      .secondary-btn-in:nth-child(even) .btn {
-        margin-left: 3px;
+        display: flex;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+        height: 40px;;
       }
       .secondary-btn-in .btn img{        
-        box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.1);
         transition: all 0.3s ease 0s;
         cursor: pointer;
         outline: none;
+        margin-right: 3px;
+        display: inline-block;
+        vertical-align: middle;
+        max-width: 14px;
       }
       .secondary_cta {
         margin-bottom: 40px;
       }
+      .secondary_cta .secondary-btn-in{
+        height: 45px;
+        line-height: 45px;
+      }
+      .secondary_cta .threed_view{
+        background: #092327;
+      }
+      .secondary_cta .mail_ques{
+        background: #0b5351;
+      }
+      .secondary_cta .linkedin{
+        background: #00a9a5;
+      }
+      .secondary_cta .whatsapp{
+        background: #accbe1;
+      }
+      .secondary_cta .facebook{
+        background: #7D98B3;
+      }
+      .secondary_cta .instagram{
+        background: #637081;
+      }
+      .secondary_cta .youtube{
+        background: #4e8098;
+        width: 50% !important;
+      }
+      .secondary_cta .loyalty{
+        background: #90c2e7;
+        width: 50% !important;
+      }
+      .secondary_cta .forums{
+        background: #8ebfd7;
+        width: 100% !important;
+      }
+      .secondary-btn-in  .btn{
+        position: relative;
+      }
+      .threed_view .btn:before {
+        background: url(assets/images/secondary/3d_view.png);
+      }
+      .mail_ques .btn:before {
+        background: url(assets/images/secondary/mail_ques.png);
+      }
+      .linkedin .btn:before {
+        background: url(assets/images/secondary/linkedin.png);
+      }
+      .whatsapp .btn:before {
+        background: url(assets/images/secondary/whatsapp.png);
+      }
+      .facebook .btn:before {
+        background: url(assets/images/secondary/facebook.png);
+      }
+      .instagram .btn:before {
+        background: url(assets/images/secondary/instagram.png);
+      }
+      .youtube .btn:before {
+        background: url(assets/images/secondary/youtube.png);
+      }
+      .loyalty .btn:before {
+        background: url(assets/images/secondary/loyalty.png);
+      }
+      .forums .btn:before {
+        background: url(assets/images/secondary/forums.png);
+      }
+
       @media (min-width: 992px) {
         header .jaguar_logo img {
           width: 180px;
         }
         header .wowsome_logo img {
           width: 200px;
-        }
-        .secondary-btn .secondary-btn-in {
-          width: 33.3333%;
-          vertical-align: top;
-          text-align: center;
-          float: left;
-          display: initial;
-        }
-        .secondary-btn-in:nth-child(odd) .btn {
-          margin-right: 0px;
-        }
-        .secondary-btn-in:nth-child(odd) {
-          text-align: center;
-        }
-        .secondary-btn-in:nth-child(even) .btn {
-          margin-left: 0;
         }
       }
 
@@ -407,6 +453,15 @@
         vertical-align: middle;
       }
       @media (max-width: 479px){
+        .secondary-btn-in .btn{
+          line-height: 15px;   
+          padding: 2px;
+        }
+        .secondary_cta .secondary-btn-in {
+          font-size: 9px;
+          height: 40px;
+          line-height: 40px !IMPORTANT;
+        }
         footer{
           margin-top: 80px;
         }
