@@ -454,13 +454,13 @@
         padding: 0;
         text-align: center;
         position: relative;
-        height: 55px;
+        height: 45px;
         margin-top: 120px;
       }
       footer .reachus{
         position: absolute;
         right: 30px;
-        top: 18px;
+        top: 12px;
         font-size: 12px;
       }
       .footer_logo{
@@ -482,13 +482,13 @@
           line-height: 40px !IMPORTANT;
         }
         footer{
-          margin-top: 80px;
+          margin-top: 50px;
         }
         .footer_logo{
-          margin-top: -28px;
+          margin-top: -23px;
         }
         .footer_logo img {
-          width: 54px;
+          width: 44px;
         }
         footer .reachus{
           right: 10px;
