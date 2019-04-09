@@ -12,11 +12,13 @@
     <div class="content">
         <header>
             <div class="container">
-                <div class="wowsome_logo">
-                    <a href="https://wowso.me" target="_blank"><img src="assets/images/wowsome.png" alt="WOWSOME" /></a>
-                </div>
-                <div class="jaguar_logo">
-                    <a href="https://www.jaguar.in/index.html" target="_blank"><img src="assets/images/jaguar.png" alt="Ford" /></a>
+                <div class="logos">
+                    <div class="jaguar_logo">
+                        <a href="https://www.jaguar.in/index.html" target="_blank"><img src="assets/images/jaguar.png" alt="Ford" /></a>
+                    </div>
+                    <div class="wowsome_logo">
+                        <a href="https://wowso.me" target="_blank"><img src="assets/images/wowsome.png" alt="WOWSOME" /></a>
+                    </div>
                 </div>
             </div>
         </header>      
@@ -25,13 +27,13 @@
                 <div class="container">
                     <div class="video-block">
                         <div class="video-in">
-                            <video id="vid" autoplay="" controls="" muted>
+                            <video id="vid" controls="" muted>
                                 <source src="assets/jaguarXF.mp4" type="video/mp4">
                             </video>
                         </div>
                         <div class="play-btn" style="display:none;">
                             <div class="play-btn-in">
-                                <img src="assets/images/play.png" alt="play">
+                                <img src="assets/images/play.png" alt="Play">
                             </div>
                         </div>
                     </div>
@@ -59,8 +61,9 @@
                 </div>
             </div>
             <div class="section secondary_cta">
-                <div class="container">
-                    <div class="secondary-btn">
+                <div class="container">                    
+                    <div class="toggle-sec"><img src="assets/images/email.png" class="toggle-icon" alt="Toggle" width="12px"></div>
+                    <div class="secondary-btn" style="display: none;">
                         <div class="secondary-btn-in threed_view">
                             <a href="3dview.html" class="btn">
                                 <span><img src="assets/images/secondary/3d_view.png" alt="3D VIEW OF THE CAR" /></span>
@@ -119,21 +122,23 @@
             </div>
             <div class="section form">
                 <div class="container">
+                    <div class="toggle-sec"><img src="assets/images/email.png" class="toggle-icon" alt="Toggle" width="12px"></div>
                     <div class="title">
-                        <h2>Send Enquiry</h2>
+                        <h2><span>Send Enquiry</span></h2>
                     </div>
-
-                    <!--[if lte IE 8]>
-                    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
-                    <![endif]-->
-                    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-                    <script>
-                    hbspt.forms.create({
-                        portalId: "1635524",
-                        formId: "889924cd-ada8-4aa8-aa84-33dcaa6143b4"
-                    });
-                    setTimeout(function(){$('input').attr("autocomplete", "off"); }, 500);
-                    </script>
+                    <div class="form-in" style="display: none;">
+                        <!--[if lte IE 8]>
+                        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+                        <![endif]-->
+                        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+                        <script>
+                            hbspt.forms.create({
+                                portalId: "1635524",
+                                formId: "889924cd-ada8-4aa8-aa84-33dcaa6143b4"
+                            });
+                            setTimeout(function(){$('input').attr("autocomplete", "off"); }, 500);
+                        </script>
+                    </div>
                 </div>
             </div>
             <div class="section ads">
@@ -149,11 +154,6 @@
                                 <img src="https://www.wowso.me/hubfs/ads/ad3.png" alt="Ad" />
                             </a>
                         </div>
-                    </div>
-                    <div class="ad_full">
-                        <a href="https://www.jaguar.in/offers-and-finance/retail-offers/xj-offer.html" target="_blank">
-                            <img src="https://www.wowso.me/hubfs/ads/ad1.png" alt="Ad" />
-                        </a>
                     </div>
                 </div>
             </div>
@@ -172,6 +172,14 @@
         setTimeout(function(){
             document.getElementById('vid').play();
         },500);
+        $(document).ready(function(){
+            $(".form .toggle-sec").click(function(){
+                $(".form-in").slideToggle( "slow" );
+            });
+            $(".secondary_cta .toggle-sec").click(function(){
+                $(".secondary-btn").slideToggle( "slow" );
+            });
+        });
     </script>
 </body>
 </html>

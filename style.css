@@ -113,22 +113,20 @@
       }
       /******** header ********/
       header {
-        padding: 12px 0 0;
         width: 100%;
         z-index: 9999;
-      }
-      header .wowsome_logo{
-          text-align: right;
+        margin: 16px 0 9px;
       }
       header .wowsome_logo img {
-        width: 170px;
+        width: 150px;
       }      
       header .jaguar_logo img {
         width: 120px;
       }
-      header .jaguar_logo{
-          text-align: center;
-          margin: 20px 0;
+      header .logos{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
       }
       /******* main content ********/
       .video video {
@@ -166,7 +164,7 @@
           transform: translate(-50%, -50%);
       }
       .primary_cta {
-        margin: 50px 0 42px;
+        margin: 30px 0 20px;
       }
       .primary-btn {
         text-align: center;
@@ -174,14 +172,14 @@
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-        margin: 0 -8px;
+        margin: 0 -2px;
       }
       .primary-btn .primary-btn-in {
         display: inline-block;
         margin: 0;
-        width: 33.3333%;
+        width: 20%;
         vertical-align: top;
-        padding: 0 5px;
+        padding: 0;
       }
       .primary-btn .primary-btn-in .btn {
         display: inline-block;
@@ -225,12 +223,12 @@
         vertical-align: top;
         max-width: 14px;
       }
-      .secondary_cta {
-        margin-bottom: 40px;
-      }
       .secondary_cta .secondary-btn-in{
         height: 45px;
         line-height: 45px;
+      }
+      .secondary-btn{        
+        margin-bottom: 40px;
       }
       .secondary_cta .threed_view{
         background: #092327;
@@ -307,7 +305,7 @@
         max-width: 460px;
         margin: 0 auto;
       }
-      .section.form {
+      .section.form .form-in {
         margin: 0px 0 50px;
         padding: 0 3px
       }
@@ -316,11 +314,35 @@
         display: none;
       }
       .title {
-        font-size: 10px;
         text-transform: uppercase;
         color: #000;
-        margin-bottom: 15px;
-        text-align: center;
+        text-align: left;
+        font-size: 9px;
+      }
+      .title h2{
+          position: relative;
+      }
+      
+      .title h2 span {
+          background-color: white;
+          padding-right: 10px;
+      }
+      .toggle-sec {
+        text-align: right;
+        background: #e1e0e0;
+        height: 1px;
+        position: relative;
+        margin: 0px 0 11px;
+      }
+      .toggle-sec img {
+        position: absolute;
+        z-index: 99999;
+        top: -4px;
+        right: 0;
+        cursor: pointer;
+      }
+      .form .toggle-sec {
+        margin: 20px 0 -19px;
       }
       @media (min-width: 480px){
         .title{
@@ -407,16 +429,13 @@
 
       /**** ads *****/
       .ads {
-        margin-bottom: 12px;
         text-align: center;
+        margin-top: 10px;
       }
       .ads img{ 
         /* box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.1); */
         transition: all 0.3s ease 0s;
         vertical-align: middle;
-      }
-      .ads .ad_full {
-        margin-top: 4.5px;
       }
       .ads .ad_hlf {
         width: 100%;
@@ -435,13 +454,13 @@
         padding: 0;
         text-align: center;
         position: relative;
-        height: 85px;
+        height: 55px;
         margin-top: 120px;
       }
       footer .reachus{
         position: absolute;
         right: 30px;
-        top: 30px;
+        top: 18px;
         font-size: 12px;
       }
       .footer_logo{
@@ -466,10 +485,10 @@
           margin-top: 80px;
         }
         .footer_logo{
-          margin-top: -34px;
+          margin-top: -28px;
         }
         .footer_logo img {
-          width: 64px;
+          width: 54px;
         }
         footer .reachus{
           right: 10px;
