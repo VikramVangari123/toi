@@ -50,7 +50,7 @@
       }
       html {
         position: relative;
-        height: 100%;
+        height: 100vh;
       }
       .content {
         margin: 0;
@@ -116,22 +116,29 @@
       }
       /******** header ********/
       header {
+        padding: 12px 0 0;
         width: 100%;
         z-index: 9999;
-        margin: 16px 0 9px;
+        height: 15vh;
+      }
+      header .wowsome_logo{
+          text-align: right;
+          margin-bottom: -35px;
       }
       header .wowsome_logo img {
-        width: 150px;
+        width: 135px;
       }      
       header .jaguar_logo img {
         width: 120px;
       }
-      header .logos{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+      header .jaguar_logo{
+          text-align: center;
+          margin: 20px 0;
       }
       /******* main content ********/
+      .video{
+        height: 26vh;
+      }
       .video video {
           width: 100%;
       }
@@ -167,7 +174,7 @@
           transform: translate(-50%, -50%);
       }
       .primary_cta {
-        margin: 30px 0 20px;
+        height: 19vh;
       }
       .primary-btn {
         text-align: center;
@@ -176,6 +183,7 @@
         align-items: center;
         flex-wrap: wrap;
         margin: 0 -2px;
+        height: 19vh;
       }
       .primary-btn .primary-btn-in {
         display: inline-block;
@@ -230,6 +238,9 @@
         display: inline-block;
         vertical-align: top;
         max-width: 14px;
+      }
+      .secondary_cta {
+        height: 10vh;
       }
       .secondary_cta .secondary-btn-in{
         height: 45px;
@@ -321,35 +332,31 @@
       .title {
         text-transform: uppercase;
         color: #000;
-        text-align: left;
+        text-align: center;
         font-size: 9px;
       }
       .title h2{
           position: relative;
-      }
-      
-      .title h2 span {
-          background-color: white;
-          padding-right: 10px;
+          margin-top: -33px;
+          line-height: 32px;
       }
       .toggle-sec {
         text-align: right;
         background: #e1e0e0;
-        height: 1px;
+        height: 32px;
         position: relative;
-        margin: 0px 0 11px;
+        margin: 0px 0 40px;
+        cursor: pointer;
       }
       .toggle-sec img {
         position: absolute;
         z-index: 99999;
-        top: -9px;
-        right: 0;
-        cursor: pointer;
-        background: #fff;
-        width: 18px;
+        top: 8.5px;
+        left: 12px;
+        width: 15px;
       }
       .form .toggle-sec {
-        margin: 20px 0 -19px;
+        margin: 20px 0 2px;
       }
       form input, form textarea {
         width: 100%;
@@ -432,7 +439,7 @@
       /**** ads *****/
       .ads {
         text-align: center;
-        margin-top: 10px;
+        height: 14vh;
       }
       .ads img{ 
         /* box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.1); */
@@ -446,6 +453,7 @@
         margin: 0 auto;
         justify-content: center;
         align-items: center;
+        height: 14vh;
       }
       .ads .ad_hlf1 {
         margin-right: 4px;
@@ -456,7 +464,7 @@
         padding: 0;
         text-align: center;
         position: relative;
-        height: 45px;
+        height: 8vh;
         margin-top: 120px;
       }
       footer .reachus{
@@ -478,6 +486,9 @@
           position: absolute;
           bottom: 0;
         }
+        .open + .sticky{
+          position: relative;
+        }
       }
       @media (max-width: 767px){
         .secondary-btn-in .btn{
@@ -488,9 +499,6 @@
           font-size: 9px;
           height: 40px;
           line-height: 40px !IMPORTANT;
-        }
-        footer{
-          margin-top: 50px;
         }
         .footer_logo{
           margin-top: -23px;

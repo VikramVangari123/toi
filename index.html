@@ -12,12 +12,12 @@
     <div class="content">
         <header>
             <div class="container">
-                <div class="logos">
-                    <div class="jaguar_logo">
-                        <a href="https://www.jaguar.in/index.html" target="_blank"><img src="assets/images/jaguar.png" alt="Ford" /></a>
-                    </div>
+                <div class="logos">                    
                     <div class="wowsome_logo">
                         <a href="https://wowso.me" target="_blank"><img src="assets/images/wowsome.png" alt="WOWSOME" /></a>
+                    </div>
+                    <div class="jaguar_logo">
+                        <a href="https://www.jaguar.in/index.html" target="_blank"><img src="assets/images/jaguar.png" alt="Jaguar" /></a>
                     </div>
                 </div>
             </div>
@@ -122,22 +122,25 @@
             </div>
             <div class="section form">
                 <div class="container">
-                    <div class="toggle-sec"><img src="assets/images/toggle-btn.png" class="toggle-icon" alt="Toggle" width="12px"></div>
-                    <div class="title">
-                        <h2><span>Send Enquiry</span></h2>
+                    <div class="toggle-sec">
+                        <img src="assets/images/toggle-btn.png" class="toggle-icon" alt="Toggle" width="12px">
+                        <div class="title">
+                            <h2><span>Send Enquiry</span></h2>
+                        </div>
                     </div>
+                    
                     <div class="form-in" style="display: none;">
                         <!--[if lte IE 8]>
                         <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
                         <![endif]-->
-                        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+                        <!-- <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
                         <script>
                             hbspt.forms.create({
                                 portalId: "1635524",
                                 formId: "889924cd-ada8-4aa8-aa84-33dcaa6143b4"
                             });
                             setTimeout(function(){$('input').attr("autocomplete", "off"); }, 500);
-                        </script>
+                        </script> -->
                     </div>
                 </div>
             </div>
@@ -169,17 +172,17 @@
     </div>
 
     <script>
-        setTimeout(function(){
-            document.getElementById('vid').play();
-        },500);
+        // setTimeout(function(){
+        //     document.getElementById('vid').play();
+        // },500);
         $(document).ready(function(){
             $(".form .toggle-sec").click(function(){
                 $(".form-in").slideToggle( "slow" );
-                $("footer").toggleClass("sticky");
+                $(".form").toggleClass("open");
             });
             $(".secondary_cta .toggle-sec").click(function(){
                 $(".secondary-btn").slideToggle( "slow" );
-                $("footer").toggleClass("sticky");
+                $(".secondary_cta").toggleClass("open");
             });
         });
     </script>
