@@ -200,6 +200,11 @@
         }
       }
 
+      .secondary-btn {
+        margin: 10px 0;
+        float: left;
+        width: 100%;
+      }
       .secondary-btn .secondary-btn-in {
         width: 33.3333%;
         vertical-align: top;
@@ -291,7 +296,7 @@
         background: url(assets/images/secondary/forums.png);
       }
 
-      @media (min-width: 992px) {
+      @media (min-width: 768px) {
         header .jaguar_logo img {
           width: 180px;
         }
@@ -306,7 +311,7 @@
         margin: 0 auto;
       }
       .section.form .form-in {
-        margin: 0px 0 50px;
+        margin: 20px 0;
         padding: 0 3px
       }
       form .hs_full_name > label, form .hs_email > label, 
@@ -337,9 +342,11 @@
       .toggle-sec img {
         position: absolute;
         z-index: 99999;
-        top: -4px;
+        top: -9px;
         right: 0;
         cursor: pointer;
+        background: #fff;
+        width: 18px;
       }
       .form .toggle-sec {
         margin: 20px 0 -19px;
@@ -466,7 +473,7 @@
       footer img{
         vertical-align: middle;
       }
-      @media (max-width: 479px){
+      @media (max-width: 767px){
         .secondary-btn-in .btn{
           line-height: 15px;   
           padding: 2px;
@@ -494,7 +501,7 @@
         }
       }
       
-      @media (max-width: 479px){
+      @media (max-width: 767px){
         .secondary_cta .secondary-btn-in{
           font-size: 7px;
         }
@@ -513,7 +520,7 @@
           padding: 2px;
         }
       }
-      @media (min-width: 992px){        
+      @media (min-width: 768px){        
         .secondary-btn-in .btn img{
           max-width: 20px;
         }
@@ -526,5 +533,8 @@
           line-height: 15px;   
           padding: 2px;
           height: 45px;
+        }
+        footer{
+          height: 55px;
         }
       }
