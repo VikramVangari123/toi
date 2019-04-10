@@ -48,7 +48,10 @@
       h1, h2 {
         line-height: 36px;
       }
-      
+      html {
+        position: relative;
+        height: 100%;
+      }
       .content {
         margin: 0;
       }
@@ -458,6 +461,10 @@
         position: relative;
         height: 45px;
         margin-top: 120px;
+      }
+      footer.sticky{
+        position: absolute;
+        bottom: 0;
       }
       footer .reachus{
         position: absolute;

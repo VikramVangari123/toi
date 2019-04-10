@@ -157,7 +157,7 @@
                     </div>
                 </div>
             </div>
-            <footer>
+            <footer class="sticky">
                 <div class="container">
                     <div class="footer_logo"><img src="assets/images/toi.png" alt="Ad" /></div>
                     <a href="http://timesinternet.in/" target="_blank" class="reachus">
@@ -175,9 +175,11 @@
         $(document).ready(function(){
             $(".form .toggle-sec").click(function(){
                 $(".form-in").slideToggle( "slow" );
+                $("footer").toggleClass("sticky");
             });
             $(".secondary_cta .toggle-sec").click(function(){
                 $(".secondary-btn").slideToggle( "slow" );
+                $("footer").toggleClass("sticky");
             });
         });
     </script>
