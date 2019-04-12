@@ -171,7 +171,6 @@
       }
       .primary_cta {
         margin: 30px 0 20px;
-        margin: 3% 0 2%;
       }
       .primary-btn {
         text-align: center;
@@ -312,7 +311,6 @@
       /**** form *****/
       .form {
         margin: 30px 0;
-        margin: 3% 0;
       }
       form {
         max-width: 460px;
