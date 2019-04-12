@@ -48,10 +48,7 @@
       h1, h2 {
         line-height: 36px;
       }
-      html {
-        position: relative;
-        height: 100vh;
-      }
+      
       .content {
         margin: 0;
       }
@@ -116,29 +113,22 @@
       }
       /******** header ********/
       header {
-        padding: 12px 0 0;
         width: 100%;
         z-index: 9999;
-        height: 15vh;
-      }
-      header .wowsome_logo{
-          text-align: right;
-          margin-bottom: -35px;
+        margin: 16px 0 9px;
       }
       header .wowsome_logo img {
-        width: 135px;
+        width: 150px;
       }      
       header .jaguar_logo img {
         width: 120px;
       }
-      header .jaguar_logo{
-          text-align: center;
-          margin: 20px 0;
+      header .logos{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
       }
       /******* main content ********/
-      .video{
-        height: 26vh;
-      }
       .video video {
           width: 100%;
       }
@@ -174,7 +164,7 @@
           transform: translate(-50%, -50%);
       }
       .primary_cta {
-        height: 19vh;
+        margin: 30px 0 20px;
       }
       .primary-btn {
         text-align: center;
@@ -183,7 +173,6 @@
         align-items: center;
         flex-wrap: wrap;
         margin: 0 -2px;
-        height: 19vh;
       }
       .primary-btn .primary-btn-in {
         display: inline-block;
@@ -239,12 +228,12 @@
         vertical-align: top;
         max-width: 14px;
       }
-      .secondary_cta {
-        height: 10vh;
-      }
       .secondary_cta .secondary-btn-in{
         height: 45px;
         line-height: 45px;
+      }
+      .secondary-btn{        
+        margin-bottom: 40px;
       }
       .secondary_cta .threed_view{
         background: #092327;
@@ -332,31 +321,35 @@
       .title {
         text-transform: uppercase;
         color: #000;
-        text-align: center;
+        text-align: left;
         font-size: 9px;
       }
       .title h2{
           position: relative;
-          margin-top: -33px;
-          line-height: 32px;
+      }
+      
+      .title h2 span {
+          background-color: white;
+          padding-right: 10px;
       }
       .toggle-sec {
         text-align: right;
         background: #e1e0e0;
-        height: 32px;
+        height: 1px;
         position: relative;
-        margin: 0px 0 40px;
-        cursor: pointer;
+        margin: 0px 0 11px;
       }
       .toggle-sec img {
         position: absolute;
         z-index: 99999;
-        top: 8.5px;
-        left: 12px;
-        width: 15px;
+        top: -9px;
+        right: 0;
+        cursor: pointer;
+        background: #fff;
+        width: 18px;
       }
       .form .toggle-sec {
-        margin: 20px 0 2px;
+        margin: 20px 0 -19px;
       }
       form input, form textarea {
         width: 100%;
@@ -439,7 +432,7 @@
       /**** ads *****/
       .ads {
         text-align: center;
-        height: 14vh;
+        margin-top: 10px;
       }
       .ads img{ 
         /* box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.1); */
@@ -453,7 +446,6 @@
         margin: 0 auto;
         justify-content: center;
         align-items: center;
-        height: 14vh;
       }
       .ads .ad_hlf1 {
         margin-right: 4px;
@@ -464,7 +456,7 @@
         padding: 0;
         text-align: center;
         position: relative;
-        height: 8vh;
+        height: 45px;
         margin-top: 120px;
       }
       footer .reachus{
@@ -481,15 +473,6 @@
       footer img{
         vertical-align: middle;
       }
-      @media (max-width: 375px){        
-        footer.sticky{
-          position: absolute;
-          bottom: 0;
-        }
-        .open + .sticky{
-          position: relative;
-        }
-      }
       @media (max-width: 767px){
         .secondary-btn-in .btn{
           line-height: 15px;   
@@ -499,6 +482,9 @@
           font-size: 9px;
           height: 40px;
           line-height: 40px !IMPORTANT;
+        }
+        footer{
+          margin-top: 50px;
         }
         .footer_logo{
           margin-top: -23px;
