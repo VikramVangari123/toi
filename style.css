@@ -118,7 +118,7 @@
         margin: 16px 0 9px;
       }
       header .wowsome_logo img {
-        width: 130px;
+        width: 120px;
       }      
       header .jaguar_logo img {
         width: 120px;
@@ -126,7 +126,7 @@
       .wowsome_logo {
         position: absolute;
         right: 0;
-        top: 0;
+        top: -5px;
       }
       .jaguar_logo {
         text-align: center;
@@ -171,6 +171,7 @@
       }
       .primary_cta {
         margin: 30px 0 20px;
+        margin: 3% 0 2%;
       }
       .primary-btn {
         text-align: center;
@@ -311,6 +312,7 @@
       /**** form *****/
       .form {
         margin: 30px 0;
+        margin: 3% 0;
       }
       form {
         max-width: 460px;
