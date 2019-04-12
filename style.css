@@ -437,6 +437,7 @@
       /**** ads *****/
       .ads {
         text-align: center;
+        margin-bottom: 104px;
       }
       .ads img{ 
         /* box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.1); */
@@ -464,7 +465,6 @@
         text-align: center;
         position: relative;
         height: 45px;
-        margin-top: 148px;
       }
       footer .reachus{
         position: absolute;
