@@ -123,10 +123,16 @@
       header .jaguar_logo img {
         width: 120px;
       }
+      .wowsome_logo {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      .jaguar_logo {
+        text-align: center;
+      }
       header .logos{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        position: relative;
       }
       /******* main content ********/
       .video video {
@@ -164,7 +170,7 @@
           transform: translate(-50%, -50%);
       }
       .primary_cta {
-        margin: 30px 0 20px;
+        margin: 40px 0 20px;
       }
       .primary-btn {
         text-align: center;
@@ -201,7 +207,7 @@
       }
 
       .secondary-btn {
-        margin: 10px 0;
+        margin: 15px 0 0;
         float: left;
         width: 100%;
       }
@@ -231,9 +237,6 @@
       .secondary_cta .secondary-btn-in{
         height: 45px;
         line-height: 45px;
-      }
-      .secondary-btn{        
-        margin-bottom: 40px;
       }
       .secondary_cta .threed_view{
         background: #092327;
@@ -306,12 +309,17 @@
       }
 
       /**** form *****/
+      .form {
+        margin: 40px 0;
+      }
       form {
         max-width: 460px;
         margin: 0 auto;
       }
       .section.form .form-in {
-        margin: 20px 0;
+        margin: 15px 0 0;
+        float: left;
+        width: 100%;
         padding: 0 3px
       }
       form .hs_full_name > label, form .hs_email > label, 
@@ -321,35 +329,30 @@
       .title {
         text-transform: uppercase;
         color: #000;
-        text-align: left;
+        text-align: center;
         font-size: 9px;
       }
       .title h2{
-          position: relative;
-      }
-      
-      .title h2 span {
-          background-color: white;
-          padding-right: 10px;
+        position: relative;
+        margin-top: 0px;
+        line-height: 32px;
       }
       .toggle-sec {
         text-align: right;
         background: #e1e0e0;
-        height: 1px;
+        height: 32px;
         position: relative;
-        margin: 0px 0 11px;
+        margin: 0;
+        cursor: pointer;
+        float: left;
+        width: 100%;
       }
       .toggle-sec img {
         position: absolute;
         z-index: 99999;
-        top: -9px;
-        right: 0;
-        cursor: pointer;
-        background: #fff;
-        width: 18px;
-      }
-      .form .toggle-sec {
-        margin: 20px 0 -19px;
+        top: 8.5px;
+        left: 12px;
+        width: 15px;
       }
       form input, form textarea {
         width: 100%;
@@ -432,7 +435,6 @@
       /**** ads *****/
       .ads {
         text-align: center;
-        margin-top: 10px;
       }
       .ads img{ 
         /* box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.1); */

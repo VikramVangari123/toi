@@ -61,8 +61,13 @@
                 </div>
             </div>
             <div class="section secondary_cta">
-                <div class="container">                    
-                    <div class="toggle-sec"><img src="assets/images/toggle-btn.png" class="toggle-icon" alt="Toggle" width="12px"></div>
+                <div class="container">                       
+                    <div class="toggle-sec">
+                        <img src="assets/images/toggle-btn.png" class="toggle-icon" alt="Toggle" width="12px">
+                        <div class="title">
+                            <h2><span>Send Enquiry</span></h2>
+                        </div>
+                    </div>   
                     <div class="secondary-btn" style="display: none;">
                         <div class="secondary-btn-in threed_view">
                             <a href="3dview.html" class="btn">
@@ -122,9 +127,11 @@
             </div>
             <div class="section form">
                 <div class="container">
-                    <div class="toggle-sec"><img src="assets/images/toggle-btn.png" class="toggle-icon" alt="Toggle" width="12px"></div>
-                    <div class="title">
-                        <h2><span>Send Enquiry</span></h2>
+                    <div class="toggle-sec">
+                        <img src="assets/images/toggle-btn.png" class="toggle-icon" alt="Toggle" width="12px">
+                        <div class="title">
+                            <h2><span>Send Enquiry</span></h2>
+                        </div>
                     </div>
                     <div class="form-in" style="display: none;">
                         <!--[if lte IE 8]>
@@ -175,9 +182,11 @@
         $(document).ready(function(){
             $(".form .toggle-sec").click(function(){
                 $(".form-in").slideToggle( "slow" );
+                $(".form").toggleClass("open");
             });
             $(".secondary_cta .toggle-sec").click(function(){
                 $(".secondary-btn").slideToggle( "slow" );
+                $(".secondary_cta").toggleClass("open");
             });
         });
     </script>
