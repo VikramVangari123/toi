@@ -172,7 +172,7 @@
           transform: translate(-50%, -50%);
       }
       .primary_cta {
-        margin: 35px 0 25px;
+        margin: 40px 0 30px;
       }
       .primary-btn {
         text-align: center;
@@ -312,7 +312,7 @@
 
       /**** form *****/
       .form {
-        margin: 35px 0;
+        margin: 40px 0;
       }
       form {
         max-width: 460px;
@@ -464,7 +464,7 @@
         text-align: center;
         position: relative;
         height: 45px;
-        margin-top: 125px;
+        margin-top: 130px;
       }
       footer .reachus{
         position: absolute;
