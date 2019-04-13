@@ -10,13 +10,18 @@
     <!-- <script src="main.js"></script> -->
     <script>
         window.onload=function(){
-        w = document.documentElement.clientWidth || document.body.clientWidth || window.innerWidth;
-        var targetWidth = 413;
-        if ( w = targetWidth) {     
-            $('.form').css('margin', '3px')
+        h = document.documentElement.clientHeight || document.body.clientHeight || window.innerHeight;
+        var targetHeight1 = 740;
+        var targetHeight1 = 667;
+        if ( h >= targetHeight1) {     
+            $('.primary_cta').css('margin', '34px 0 24px');
+            $('.form').css('margin', '34px 0');
+            $('.ads').css('margin', '0 0 60px');            
         }
-        else {
-        //Add your javascript for screens smaller than 768 here
+        else if ( h >= targetHeight2){            
+            $('.primary_cta').css('margin', '16px 0 6px');
+            $('.form').css('margin', '17px 0');
+            $('.ads').css('margin', '0 0 41px');   
         }  
         };
     </script>
