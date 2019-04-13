@@ -195,19 +195,19 @@
             });
         });
         $(window).onload(function(){
-            if ($(window).height() >= 740){
+            if ($(window).innerHeight() >= 740){
                 $('.content').addClass('android_h');
             }
-            else if ($(window).height() >= 736){
+            else if ($(window).innerHeight() >= 736){
                 $('.content').addClass('iphone_h');
             }
-            else if ($(window).height() >= 732){
+            else if ($(window).innerHeight() >= 732){
                 $('.content').addClass('android_l');
             }
-            else if ($(window).height() >= 667) {
+            else if ($(window).innerHeight() >= 667) {
                 $('.content').addClass('iphone_l');
             }        
-            else if ($(window).height() <= 666  ) {
+            else if ($(window).innerHeight() <= 666  ) {
                 $('.content').addClass('android');
             }
         });        
