@@ -544,15 +544,15 @@
       }
 
 
-        .android .primary_cta {
-          margin: 34px 0 24px;
-        }
-        .android .form {
-          margin: 34px 0;
-        }
-        .android .ads {
-          margin-bottom: 60px;
-        }
+      .android_l .primary_cta {
+        margin: 22px 0 12px;
+      }
+      .android_l .form {
+        margin: 22px 0;
+      }
+      .android_l .ads {
+        margin-bottom: 47px;
+      }
         
         /**** 414 x 896 (iPHone XR, iPhone XS Max) ****/
       
