@@ -6,7 +6,8 @@
     <link rel="shortcut icon" href="assets/images/favicon.ico">
     <title>Jaguar</title>
     <link rel="stylesheet" href="style.css" />                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+    <script src="main.js"></script> 
 </head>
 <body>
     <div class="content">
@@ -193,27 +194,7 @@
                 $(".secondary-btn").slideToggle( "slow" );
                 $(".secondary_cta").toggleClass("open");
             });
-        });
-        $(document).ready(function(){
-            if ($(window).innerHeight() = 740){
-                $('.content').addClass('android_h');
-            }
-            else if ($(window).innerHeight() = 736){
-                $('.content').addClass('iphone_h');
-            }
-            else if ($(window).innerHeight() = 732){
-                $('.content').addClass('android_l');
-            }
-            else if ($(window).innerHeight() = 667) {
-                $('.content').addClass('iphone_l');
-            }        
-            else if ($(window).innerHeight() <= 666  ) {
-                $('.content').addClass('android');
-            }
-            else if ($(window).innerWidth() = 412  ) {
-                $('.content').addClass('android');
-            }
-        });        
+        });  
     </script>
 </body>
 </html>
