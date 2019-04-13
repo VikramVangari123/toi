@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta charset="utf-8" />
     <link rel="shortcut icon" href="assets/images/favicon.ico">
     <title>Jaguar</title>
@@ -194,6 +194,18 @@
                 $(".secondary_cta").toggleClass("open");
             });
         });
+        if ($(window).innerHeight() >= 740){
+            $('body').addClass("android_h");
+        }
+        else if ($(window).innerHeight() >= 736){
+            $('body').addClass("iphone_h");
+        }
+        else if ($(window).innerHeight() >= 732){
+            $('body').addClass("android_l");
+        }
+        else if ($(window).innerHeight() >= 667) {
+            $('body').addClass("iphone_l");
+        }
     </script>
 </body>
 </html>

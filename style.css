@@ -437,7 +437,7 @@
       /**** ads *****/
       .ads {
         text-align: center;
-        margin-bottom: 74px;
+        margin-bottom: 105px;
       }
       .ads img{ 
         /* box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.1); */
@@ -542,3 +542,49 @@
           height: 55px;
         }
       }
+
+
+      
+      
+      /**** 414 X 736(iPhone 8 Plus, 7 Plus, 6 Plus, 6S Plus) ****/
+      
+        .iphone_h .primary_cta {
+          margin: 22px 0 12px;
+        }
+        .iphone_h .form {
+          margin: 22px 0;
+        }
+        .iphone_h .ads {
+          margin-bottom: 47px;
+        }
+        /**** 375 X 667 (IPhone 8, iPhone 7, IPhone 6/6S) ****/
+        .iphone_l .primary_cta {
+          margin: 16px 0 6px !important;
+        }
+        .iphone_l .form {
+          margin: 17px 0;
+        }
+        .iphone_l .ads {
+          margin-bottom: 41px;
+        }
+        /**** 412 X 732 (Android) ****/
+        .android_l .primary_cta {
+          margin: 22px 0 12px;
+        }
+        .android_l .form {
+          margin: 22px 0;
+        }
+        .android_l .ads {
+          margin-bottom: 47px;
+        }
+
+        /**** 360 X 740 (Android) ****/
+        .android_h .primary_cta {
+          margin: 34px 0 24px;
+        }
+        .android_h .form {
+          margin: 34px 0;
+        }
+        .android_h .ads {
+          margin-bottom: 60px;
+        }
