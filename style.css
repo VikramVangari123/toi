@@ -553,9 +553,20 @@
         .android .ads {
           margin-bottom: 60px;
         }
+        
+        /**** 414 x 896 (iPHone XR, iPhone XS Max) ****/
       
-      /**** 414 X 736(iPhone 8 Plus, 7 Plus, 6 Plus, 6S Plus) ****/
-      
+        .iphone_xr .primary_cta {
+          margin: 22px 0 12px;
+        }
+        .iphone_xr .form {
+          margin: 22px 0;
+        }
+        .iphone_xr .ads {
+          margin-bottom: 47px;
+        }
+
+        /**** 414 X 736(iPhone 8 Plus, 7 Plus, 6 Plus, 6S Plus) ****/      
         .iphone_h .primary_cta {
           margin: 22px 0 12px;
         }

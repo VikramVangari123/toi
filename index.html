@@ -194,21 +194,24 @@
                 $(".secondary_cta").toggleClass("open");
             });
         });
-        if ($(window).innerHeight() >= 740){
-            $('body').addClass("android_h");
+        $(window).load(function(){
+            if ($(window).innerHeight() >= 740){
+                $('body').addClass("android_h");
+            }
+            else if ($(window).innerHeight() >= 736){
+                $('body').addClass("iphone_h");
+            }
+            else if ($(window).innerHeight() >= 732){
+                $('body').addClass("android_l");
+            }
+            else if ($(window).innerHeight() >= 667) {
+                $('body').addClass("iphone_l");
+            }        
+            else if ($(window).innerHeight() <= 666  ) {
+                $('body').addClass("android");
+            }
         }
-        else if ($(window).innerHeight() >= 736){
-            $('body').addClass("iphone_h");
-        }
-        else if ($(window).innerHeight() >= 732){
-            $('body').addClass("android_l");
-        }
-        else if ($(window).innerHeight() >= 667) {
-            $('body').addClass("iphone_l");
-        }        
-        else if ($(window).innerHeight() <= 666  ) {
-            $('body').addClass("android");
-        }
+        
     </script>
 </body>
 </html>
