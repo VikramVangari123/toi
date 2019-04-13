@@ -195,23 +195,22 @@
             });
         });
         $(window).onload(function(){
-            if ($(window).innerHeight() >= 740){
-                $('body').addClass("android_h");
+            if ($(window).height() >= 740){
+                $('body').addClass('android_h');
             }
-            else if ($(window).innerHeight() >= 736){
-                $('body').addClass("iphone_h");
+            else if ($(window).height() >= 736){
+                $('body').addClass('iphone_h');
             }
-            else if ($(window).innerHeight() >= 732){
-                $('body').addClass("android_l");
+            else if ($(window).height() >= 732){
+                $('body').addClass('android_l');
             }
-            else if ($(window).innerHeight() >= 667) {
-                $('body').addClass("iphone_l");
+            else if ($(window).height() >= 667) {
+                $('body').addClass('iphone_l');
             }        
-            else if ($(window).innerHeight() <= 666  ) {
-                $('body').addClass("android");
+            else if ($(window).height() <= 666  ) {
+                $('body').addClass('android');
             }
-        }
-        
+        });        
     </script>
 </body>
 </html>
