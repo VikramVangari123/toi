@@ -544,13 +544,13 @@
       }
 
 
-      .android_l .primary_cta {
+      .android .primary_cta {
         margin: 22px 0 12px;
       }
-      .android_l .form {
+      .android .form {
         margin: 22px 0;
       }
-      .android_l .ads {
+      .android .ads {
         margin-bottom: 47px;
       }
         
