@@ -544,7 +544,17 @@
       }
 
 
-      
+      @media screen and (max-height: 740px) {
+        .primary_cta {
+          margin: 34px 0 24px;
+        }
+        .form {
+          margin: 34px 0;
+        }
+        .ads {
+          margin-bottom: 60px;
+        }
+      }
       
       /**** 414 X 736(iPhone 8 Plus, 7 Plus, 6 Plus, 6S Plus) ****/
       
