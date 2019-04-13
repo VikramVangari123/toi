@@ -16,7 +16,7 @@ $(document).ready(function(){
     // else if ($(window).innerHeight() <= 666  ) {
     //     $('.content').addClass('android');
     // }
-    if ($(window).width() >= 412) {
+    if ($(window).width() >= 212) {
         $('.content').addClass('android');
     }
 }); 
