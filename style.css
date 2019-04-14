@@ -607,7 +607,7 @@
         .android_h .ads {
           margin-bottom: 60px;
         }
-        @media ( max-height: 824px ){
+        @media ( max-height: 732px ){
           .primary_cta {
             margin: 22px 0 12px;
           }
@@ -618,14 +618,14 @@
             margin-bottom: 47px;
           }
         }
-        @media ( max-height: 732px ){
+        @media ( max-height: 620px ){
           .primary_cta {
-            margin: 22px 0 12px;
+            margin: 13px 0px 6px;
           }
           .form {
-            margin: 22px 0;
+            margin: 13px 0;
           }
           .ads {
-            margin-bottom: 47px;
+            margin-bottom: 40px;
           }
         }
