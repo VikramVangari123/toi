@@ -620,12 +620,12 @@
         }
         @media ( max-height: 620px ){
           .primary_cta {
-            margin: 13px 0px 6px;
+            margin: 10px 0px 4px;
           }
           .form {
-            margin: 13px 0;
+            margin: 10px 0;
           }
           .ads {
-            margin-bottom: 40px;
+            margin-bottom: 30px;
           }
         }
