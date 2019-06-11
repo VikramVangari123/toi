@@ -543,7 +543,14 @@
         }
       }
 
+      @media (max-width: 640px) and (min-height: 846px){
+        .sticky{
+          position: absolute;
+          bottom: 0;
+        }
+      }
 
+      /** for devices **/
       .android .primary_cta {
         margin: 22px 0 12px;
       }

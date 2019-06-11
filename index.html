@@ -7,26 +7,36 @@
     <title>Jaguar</title>
     <link rel="stylesheet" href="style.css" />                                           
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.1/jquery.min.js"></script> 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-80586347-3"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-80586347-3');
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics latest -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141767837-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-141767837-1');
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Ads: 735682128 -- Remarketing code -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-735682128"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-735682128');
+    </script>
     
-    
-    <!-- <script src="main.js"></script> -->
-    <!-- <script>
-        window.onload=function(){
-        h = document.documentElement.clientHeight || document.body.clientHeight || window.innerHeight;
-        var targetHeight1 = 740;
-        var targetHeight2 = 667;
-        if ( h >= targetHeight1) {     
-            $('.primary_cta').css('margin', '34px 0 24px');
-            $('.form').css('margin', '34px 0');
-            $('.ads').css('margin', '0 0 60px');            
-        }
-        else if ( h >= targetHeight2){            
-            $('.primary_cta').css('margin', '16px 0 6px');
-            $('.form').css('margin', '17px 0');
-            $('.ads').css('margin', '0 0 41px');   
-        }  
-        };
-    </script> -->
 </head>
 <body>
     <div class="content">
@@ -47,7 +57,7 @@
                 <div class="container">
                     <div class="video-block">
                         <div class="video-in">
-                            <video id="vid" controls="" muted>
+                            <video id="vid" controls="" autoplay="autoplay" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto">
                                 <source src="assets/jaguarXF.mp4" type="video/mp4">
                             </video>
                         </div>
@@ -63,7 +73,7 @@
                 <div class="container">
                     <div class="primary-btn">
                         <div class="primary-btn-in">
-                            <a href="https://jdxforms.jaguar.com/jaguar-in-en/servlet/SmartForm.html" target="_blank" class="btn"><img src="assets/images/primary/book.png" alt="Book a test drive" /></a>
+                            <a href="https://cxp-forms.jaguar.com/in-national/en/form/01224000000TXPb/" target="_blank" class="btn"><img src="assets/images/primary/book.png" alt="Book a test drive" /></a>
                         </div>
                         <div class="primary-btn-in">
                             <a href="https://www.google.com/maps/search/jaguar+nearest+dealer/" target="_blank" class="btn"><img src="assets/images/primary/locate.png" alt="Locate nearest showroom" /></a>
@@ -173,18 +183,18 @@
                     <div class="ad_hlf">
                         <div class="ad_hlf1">
                             <a href="https://www.jaguar.in/offers-and-finance/retail-offers/xe-offer.html" target="_blank">
-                                <img src="https://www.wowso.me/hubfs/ads/ad2.png" alt="Ad" />
+                                <img src="https://www.wowso.me/hubfs/toi/ads/ad2.png" alt="Ad" />
                             </a>
                         </div>
                         <div class="ad_hlf2">
                             <a href="https://www.jaguar.in/offers-and-finance/retail-offers/xf-offer.html" target="_blank">
-                                <img src="https://www.wowso.me/hubfs/ads/ad3.png" alt="Ad" />
+                                <img src="https://www.wowso.me/hubfs/toi/ads/ad3.png" alt="Ad" />
                             </a>
                         </div>
                     </div>
                     <div class="ad_full">
                         <a href="https://www.jaguar.in/jaguar-range/xj/index.html" target="_blank">
-                            <img src="https://www.wowso.me/hubfs/ads/ad1.png" alt="Ad">
+                            <img src="https://www.wowso.me/hubfs/toi/ads/ad1.png" alt="Ad">
                         </a>
                     </div>
                 </div>
@@ -204,16 +214,46 @@
         setTimeout(function(){
             document.getElementById('vid').play();
         },500);
+
         $(document).ready(function(){
             $(".form .toggle-sec").click(function(){
                 $(".form-in").slideToggle( "slow" );
                 $(".form").toggleClass("open");
+                if($(".form").hasClass('open')){
+                    $('footer').removeClass('sticky');
+                }
+            });
+            $(".form").click(function(){
+                if($(".form").hasClass('open')){
+                    $('footer').removeClass('sticky');
+                }
+                else if($(".secondary_cta").hasClass('open')){
+                    $('footer').removeClass('sticky');
+                }
+                else{
+                    $('footer').addClass('sticky');
+                }
             });
             $(".secondary_cta .toggle-sec").click(function(){
                 $(".secondary-btn").slideToggle( "slow" );
                 $(".secondary_cta").toggleClass("open");
+                if($(".secondary_cta").hasClass('open')){
+                    $('footer').removeClass('sticky');
+                }
+            });
+            $(".secondary_cta").click(function(){
+                if($(".secondary_cta").hasClass('open')){
+                    $('footer').removeClass('sticky');
+                }
+                else if($(".form").hasClass('open')){
+                    $('footer').removeClass('sticky');
+                }
+                else{
+                    $('footer').addClass('sticky');
+                }
             });
         });  
     </script>
+    
 </body>
 </html>
