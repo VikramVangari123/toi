@@ -543,7 +543,7 @@
         }
       }
 
-      @media (max-width: 640px) and (min-height: 846px){
+      @media (max-width: 640px){
         .sticky{
           position: absolute;
           bottom: 0;
