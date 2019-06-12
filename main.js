@@ -20,4 +20,5 @@ $(document).ready(function(){
         $('.content').addClass('android');
     }
 }); 
-});     
+
+});   

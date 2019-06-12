@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <link rel="shortcut icon" href="https://cdn2.hubspot.net/hubfs/1635524/assets/website/images/favicon.png">
     <title>Jaguar</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <style>
         html,
@@ -34,7 +34,8 @@
             left: 50%;
             transform: translate(-50%);
             font-size: 12px;
-            color: #ff0000;
+            color: #b01010;
+            width: 100%;
         }
         .popupbox {
             background: #ffffff;
@@ -109,30 +110,35 @@
                         </form>
                         <button id="accept" onclick="validateForm()">Submit</button>
                     </div>
-                    <div id="success" style="display: none;">Succefull</div>
-                    <div id="error" style="display: none;">Error</div>
+                    <div id="success" style="display: none;">Success</div>
+                    <div id="error" style="display: none;">Please enter correct phone number</div>
                 </div>
             </div>
         </div>
-
+    </div>
         <script>
             function validateForm() {
-                document.getElementById("error").style.display = "none";
-                document.getElementById("success").style.display = "none";
-                var mobilePattern = /^[1-9]{1}[0-9]{9}$/;
-                var mobileNumber = document.forms["myForm"]["phone"].value;
+               document.getElementById("error").style.display = "none";
+               document.getElementById("success").style.display = "none";
+               var mobilePattern = /^[0-9]+?$/;
+               var mobileNumber = document.forms["myForm"]["phone"].value;
 
-                if (mobilePattern.test(mobileNumber) == false) {
-                    document.getElementById("Please enter correct phone number").style.display = "block";
-                    console.log('error')
-                } else {
-                    // document.getElementById("success").style.display = "block";
-                    // console.log('success');                    
-                    setTimeout(function(){ 
-                        document.getElementById("overlay").style.display = "none";
-                    }, 500);
-                }
-            }
+               if (mobilePattern.test(mobileNumber) == false) {
+                   document.getElementById("error").style.display = "block";
+                  // console.log('error')
+               } else {
+                   // document.getElementById("success").style.display = "block";
+                   // console.log('success');
+                   setTimeout(function(){
+                       localStorage.setItem('mobileNumber', document.forms["myForm"]["phone"].value)
+                       document.getElementById("overlay").style.display = "none";
+                   }, 500);
+               }
+           }
+
+           if  (localStorage.getItem('mobileNumber')) {
+            document.getElementById("overlay").style.display = "none";
+           }
         </script>
 </body>
 
