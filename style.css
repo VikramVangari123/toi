@@ -584,6 +584,10 @@
           .form {
             margin: 25px 0;
           }
+          .primary-btn{
+            max-width: 80%;
+            margin: 0 auto;
+          }
         }
         @media screen and (device-aspect-ratio: 1024/1366) {
           .primary_cta{
@@ -595,6 +599,10 @@
           header {
             margin: 36px 0 29px;
           }
+          .primary-btn{
+            max-width: 80%;
+            margin: 0 auto;
+          }
         }
         @media screen and (device-aspect-ratio: 16/9) {
           .primary_cta{
@@ -605,5 +613,9 @@
           }
           header {
             margin: 36px 0 29px;
+          }
+          .primary-btn{
+            max-width: 80%;
+            margin: 0 auto;
           }
         }
