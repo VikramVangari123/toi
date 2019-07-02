@@ -579,13 +579,13 @@
         }
         @media (min-width: 768px) and (max-width: 1024px) {
           .primary_cta{
-            margin: 25px 0 5px;
+            margin: 17px 0 -5px;
           }
           .form {
-            margin: 5px 0;
+            margin: 18px 0;
           }
           .primary-btn{
-            max-width: 80%;
+            max-width: 70%;
             margin: 0 auto;
           }
         }
