@@ -120,7 +120,7 @@
             function validateForm() {
                document.getElementById("error").style.display = "none";
                document.getElementById("success").style.display = "none";
-               var mobilePattern = /^[0-9]+?$/;
+               var mobilePattern = /^[14][0-9]+?$/;
                var mobileNumber = document.forms["myForm"]["phone"].value;
 
                if (mobilePattern.test(mobileNumber) == false) {

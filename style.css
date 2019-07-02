@@ -465,6 +465,7 @@
         text-align: center;
         position: relative;
         height: 45px;
+        transition: all 0.3s ease 0s;
       }
       footer .reachus{
         position: absolute;
