@@ -203,6 +203,8 @@
       }
       .primary-btn .primary-btn-in .btn img {
         vertical-align: middle;
+        max-width: 42px;
+        max-height: 42px;
       }
       .primary-btn .primary-btn-in a p{
         text-transform: uppercase;
@@ -523,10 +525,10 @@
         }
         @media ( max-height: 620px ){
           .primary_cta {
-            margin: 4% 0 4%;
+            margin: 2% 0 2%;
           }
           .form {
-            margin: 6% 0 6%;
+            margin: 3% 0 3%;
           }
           .ads {
             margin-bottom: 34px;
