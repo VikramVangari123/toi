@@ -502,10 +502,10 @@
       
         @media ( max-height: 732px ){
           .primary_cta {
-            margin: 22px 0 22px;
+            margin: 7% 0 7%;
           }
           .form {
-            margin: 22px 0;
+            margin: 9% 0;
           }
           .ads {
             margin-bottom: 47px;
@@ -516,10 +516,10 @@
         }
         @media ( max-height: 620px ){
           .primary_cta {
-            margin: 11px 0px 11px;
+            margin: 4% 0 4%;
           }
           .form {
-            margin: 12px 0;
+            margin: 6% 0 6%;
           }
           .ads {
             margin-bottom: 34px;
