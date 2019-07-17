@@ -180,7 +180,7 @@
           transform: translate(-50%, -50%);
       }
       .primary_cta {
-        margin: 40px 0 30px;
+        margin: 40px 0 40px;
       }
       .primary-btn {
         text-align: center;
@@ -222,8 +222,8 @@
       }
       @media (max-width: 539px) {
         .primary-btn .primary-btn-in a p {
-          font-size: 12px;
-          line-height: 15px;
+          font-size: 10px;
+          line-height: 12px;
         }
       }
 
@@ -462,7 +462,7 @@
       }
       @media (max-width: 767px){
         .primary-btn .primary-btn-in{
-          margin: 0 0 10px 0;
+          margin: 0;
         }
         .primary-btn .primary-btn-in:nth-child(4), .primary-btn .primary-btn-in:nth-child(5),
         .primary-btn .primary-btn-in:nth-child(6) {
@@ -502,7 +502,7 @@
       
         @media ( max-height: 732px ){
           .primary_cta {
-            margin: 22px 0 12px;
+            margin: 22px 0 22px;
           }
           .form {
             margin: 22px 0;
@@ -510,16 +510,22 @@
           .ads {
             margin-bottom: 47px;
           }
+          header{
+            margin: 11px 0 4px;
+          }
         }
         @media ( max-height: 620px ){
           .primary_cta {
-            margin: 11px 0px 1px;
+            margin: 11px 0px 11px;
           }
           .form {
             margin: 12px 0;
           }
           .ads {
             margin-bottom: 34px;
+          }
+          header{
+            margin: 11px 0 4px;
           }
         }
         /* @media (min-width: 768px) and (max-width: 1024px) {
@@ -536,7 +542,7 @@
         } */
         @media screen and (device-aspect-ratio: 768/1024) {
           .primary_cta{
-            margin: 15px 0 -2px;
+            margin: 15px 0 15px;
           }
           .form {
             margin: 5px 0 15px;
@@ -551,7 +557,7 @@
         }
         @media screen and (device-aspect-ratio: 1024/1366) {
           .primary_cta{
-            margin: 40px 0 20px;
+            margin: 40px 0 40px;
           }
           .form {
             margin: 40px 0;
