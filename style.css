@@ -120,7 +120,7 @@
         margin: 31px 0 24px;
       }    
       header .logo img {
-        width: auto;
+        max-width: 140px;
       }
       .logo {
         text-align: center;
@@ -213,6 +213,16 @@
         font-size: 16px;
         line-height: 20px;
         margin-top: 10px;
+        position: relative;
+      }
+      .primary-btn .primary-btn-in a p sup{
+        position: absolute;
+        margin-right: 8px;
+        top: -2px;
+      }
+      .primary-btn .primary-btn-in a p span{
+        margin-right: 5px;
+        margin-left: 1px;
       }
       @media (min-width: 540px) {
         .primary-btn .primary-btn-in .btn{
