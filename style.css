@@ -262,8 +262,9 @@
         width: 100%;
         text-align: center;
         font-style: italic;
-        margin-top: -18px;
+        margin-top: -22px;
         margin-bottom: 20px;
+        font-size: 14px;
       }
       form .hs_full_name > label, form .hs_email > label, 
       form .ask_your_query_ > label, form .hs_mobilephone > label, .hs-fieldtype-textarea > label {
@@ -391,13 +392,19 @@
         border: 0;
         box-shadow: none;
         height: 45px;
-        background: #FFCC33;
+        background-color: #FFCC33;
         color: #000;
         text-align: center;
         padding: 0;
         text-transform: uppercase;
         cursor: pointer;
         font-weight: bold;
+        border-radius: 0;
+        -webkit-border-radius:0;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        opacity: 1;
       }
       ul.hs-error-msgs.inputs-list {
         font-size: 11px;
