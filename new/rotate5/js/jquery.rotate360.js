@@ -24,8 +24,8 @@ jQuery.fn.rotate360 = function () {
 		var prev_image = Number(number) - 1;
 		prev_image = prev_image == 0 ? 1 : prev_image;
 		prev_image = prev_image < 10 ? "0" + prev_image : prev_image;
-		$("#bg_smooth").attr("src", options1.yourDirectory1.toUpperCase() + '/A_360_' + prev_image + '.jpg');
-		$(this).css("background-image", "url(" + options1.yourDirectory1.toLowerCase() + "/A_360_" + number + ".jpg)");
+		$("#bg_smooth").attr("src", options1.yourDirectory1.toLowerCase() + '/a_360_' + prev_image + '.jpg');
+		$(this).css("background-image", "url(" + options1.yourDirectory1.toLowerCase() + "/a_360_" + number + ".jpg)");
 	}
 
 	function autoplaySliderAndImages() {
