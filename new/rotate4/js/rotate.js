@@ -14,7 +14,7 @@
 		if (!options.speed) options.speed = defOptions.speed;
 
 		var clickPosition = null,
-			currentIndex = 0,
+			currentIndex = 1,
 			images = [],
 			image = null;
 
