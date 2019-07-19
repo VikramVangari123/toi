@@ -17,10 +17,8 @@ html {
 }
 
 body {
-  font-size: 1.6rem;
-  font-family: "Lato", sans-serif;
   color: #ffffff;
-  background-color: #000000;
+  height: 100%;
 }
 
 a {
@@ -76,6 +74,7 @@ Main Components
   display: block;
   position: relative;
   z-index: 1;
+  opacity: 0;
 }
 .cd-product-viewer-wrapper .product-sprite {
   position: absolute;
@@ -84,8 +83,8 @@ Main Components
   left: 0;
   height: 100%;
   /* our image sprite is composed by 16 frames */
-  width: 1600%;
-  background: url(../img/img-sprite.png) no-repeat center center;
+  width: 2400%;
+  background: url(../img/img-sprite.jpg) no-repeat center center;
   background-size: 100%;
   opacity: 0;
   -webkit-transition: opacity 0.3s;
