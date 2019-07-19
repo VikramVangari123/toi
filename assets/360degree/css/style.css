@@ -12,9 +12,42 @@ html * {
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   color: #ffffff;
-  height: 100%;
+}
+
+a {
+  color: #b54240;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+header {
+  position: relative;
+}
+header h1 {
+  text-align: center;
+  padding: 2em 5%;
+  font-size: 2rem;
+}
+@media only screen and (min-width: 768px) {
+  header h1 {
+    font-size: 3rem;
+    padding: 3em 5% 1em;
+  }
+}
+@media only screen and (min-width: 1170px) {
+  header h1 {
+    font-weight: 300;
+    padding: 3em 5% 0;
+  }
 }
 
 /* -------------------------------- 
@@ -40,7 +73,6 @@ Main Components
   display: block;
   position: relative;
   z-index: 1;
-  opacity: 0;
 }
 .cd-product-viewer-wrapper .product-sprite {
   position: absolute;
@@ -50,7 +82,7 @@ Main Components
   height: 100%;
   /* our image sprite is composed by 16 frames */
   width: 2400%;
-  background: url(../images/img-sprite.jpg) no-repeat center center;
+  background: url(../../../assets/360degree/images/img-sprite.jpg) no-repeat center center;
   background-size: 100%;
   opacity: 0;
   -webkit-transition: opacity 0.3s;
@@ -115,7 +147,7 @@ Main Components
   width: 44px;
   left: 0;
   top: -20px;
-  background: #b54240 url(../img/cd-arrows.svg) no-repeat center center;
+  background: #b54240 url(../assets/360degree/images/cd-arrows.svg) no-repeat center center;
   border-radius: 50%;
   box-shadow: 0 0 0 6px rgba(181, 66, 64, 0.3), 0 0 20px rgba(0, 0, 0, 0.2);
   /* replace text with image */
@@ -196,9 +228,3 @@ Main Components
     transform: translateX(-50%) scale(1);
   }
 }
-
-/* @media (max-width: 479px){
-  .cd-product-viewer-wrapper .product-viewer {
-    margin-top: 50%;
-  }
-} */
