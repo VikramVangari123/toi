@@ -175,29 +175,11 @@
         },500);
 
         $(document).ready(function(){
-            // $(".form .toggle-sec").click(function(){
-            //     $(".form-in").slideToggle( "slow" );
-            //     $(".form").toggleClass("open");
-            //     if($(".form").hasClass('open')){
-            //         $('footer').removeClass('sticky');
-            //     }
-            // });
-            // $(".form").click(function(){
-            //     if($(".form").hasClass('open')){
-            //         $('footer').removeClass('sticky');
-            //     }
-            //     else if($(".secondary_cta").hasClass('open')){
-            //         $('footer').removeClass('sticky');
-            //     }
-            //     else{
-            //         $('footer').addClass('sticky');
-            //     }
-            // });
             $(".secondary_cta .toggle-sec").click(function(){
                 $(".secondary-btn").slideToggle( "slow" );
                 $(".secondary_cta").toggleClass("open");
                 if($(".secondary_cta").hasClass('open')){
-                    $('footer').removeClass('sticky');
+                    $('footer').removeClass('sticky', 1000);
                 }
                 else{
                     $('footer').addClass('sticky');
