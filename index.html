@@ -185,17 +185,6 @@
                     $('footer').addClass('sticky');
                 }
             });
-            // $(".secondary_cta").click(function(){
-            //     if($(".secondary_cta").hasClass('open')){
-            //         $('footer').removeClass('sticky');
-            //     }
-            //     else if($(".form").hasClass('open')){
-            //         $('footer').removeClass('sticky');
-            //     }
-            //     else{
-            //         $('footer').addClass('sticky');
-            //     }
-            // });
         });  
         // $(function(){
         //     $('html') .css({'height': (($(window).height()))+'px'});
@@ -204,18 +193,13 @@
         //         $('html') .css({'height': (($(window).height()))+'px'});
         //     });
         // });
-        // var height = window.innerHeight ? window.innerHeight : $(window).height();
-        // $('html').height(height);
-        var lastVal = 0;
-            $(window).scroll(function() {
-            var st = $(this).scrollTop();
-            if (st > lastVal){
-                $("html").css({height: "+=" + (st - lastVal) + "px"});
-            } else {
-                // Is scrolling up, do nothing...
-            }
-            lastVal = st;
-        });
+        var h = jQuery("html");
+        jQuery(window).resize("resize");
+        function resize() {
+            h.height(jQuery(window).height());
+        }
+        resize();
+        
     </script>
     
 </body>
