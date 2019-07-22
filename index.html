@@ -215,13 +215,15 @@
             //     }
             // });
         });  
-        $(function(){
-            $('html') .css({'height': (($(window).height()))+'px'});
+        // $(function(){
+        //     $('html') .css({'height': (($(window).height()))+'px'});
         
-            $(window).bind('resize', function(){
-                $('html') .css({'height': (($(window).height()))+'px'});
-            });
-        });
+        //     $(window).bind('resize', function(){
+        //         $('html') .css({'height': (($(window).height()))+'px'});
+        //     });
+        // });
+        var height = window.innerHeight ? window.innerHeight : $(window).height();
+        $('html').height(height);
     </script>
     
 </body>
