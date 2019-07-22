@@ -5,7 +5,12 @@
         padding: 0;
         box-sizing: border-box;
     }
-    
+    html, body{
+      height: 100%;
+    }
+    html{
+      position: relative;
+    }
     body {
         font-size: 15px;
         font-family: "Roboto", sans-serif;
@@ -564,7 +569,7 @@
         }
         @media ( max-height: 620px ){
           .primary_cta {
-            margin: 5% 0 5%;
+            margin: 4% 0 4%;
           }
           .form {
             margin: 3% 0 3%;
