@@ -524,6 +524,9 @@
           width: 70%;
           float: right;
         }
+        .secondary_cta .title h2{
+          font-size: 12px;
+        }
       }
       
       @media (min-width: 768px){  
@@ -575,13 +578,7 @@
         }
         @media ( max-height: 620px ){
           .primary_cta {
-            margin: 4% 0 4%;
-          }
-          .form {
             margin: 3% 0 3%;
-          }
-          .ads {
-            margin-bottom: 34px;
           }
           header{
             padding: 8px 0 1px;
