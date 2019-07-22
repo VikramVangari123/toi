@@ -204,8 +204,18 @@
         //         $('html') .css({'height': (($(window).height()))+'px'});
         //     });
         // });
-        var height = window.innerHeight ? window.innerHeight : $(window).height();
-        $('html').height(height);
+        // var height = window.innerHeight ? window.innerHeight : $(window).height();
+        // $('html').height(height);
+        var lastVal = 0;
+            $(window).scroll(function() {
+            var st = $(this).scrollTop();
+            if (st > lastVal){
+                $("html").css({height: "+=" + (st - lastVal) + "px"});
+            } else {
+                // Is scrolling up, do nothing...
+            }
+            lastVal = st;
+        });
     </script>
     
 </body>
