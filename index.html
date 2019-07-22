@@ -18,16 +18,6 @@
     gtag('config', 'UA-80586347-3');
     </script>
 
-    <!-- Global site tag (gtag.js) - Google Analytics latest -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141767837-1"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-141767837-1');
-    </script>
-
     <!-- Global site tag (gtag.js) - Google Ads: 735682128 -- Remarketing code -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-735682128"></script>
     <script>
@@ -225,6 +215,13 @@
             //     }
             // });
         });  
+        $(function(){
+            $('html') .css({'height': (($(window).height()))+'px'});
+        
+            $(window).bind('resize', function(){
+                $('html') .css({'height': (($(window).height()))+'px'});
+            });
+        });
     </script>
     
 </body>
