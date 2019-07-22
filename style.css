@@ -474,7 +474,7 @@
         text-align: center;
         position: relative;
         height: 45px;
-        transition: all 0.3s ease 0s;
+        transition: 0.5s linear;
         margin-top: 22px;
       }
       footer .reachus{
@@ -530,30 +530,41 @@
         .sticky{
           position: absolute !important;
           bottom: 0 !important;
+          transition: 0.5s linear;
         }
       }
 
-      
-        @media ( max-height: 732px ){
+        @media ( max-height: 1024px ){
           .primary_cta {
-            margin: 5% 0 5%;
+            margin: 6% 0 6%;
           }
           .form {
             margin: 3% 0;
-          }
-          .ads {
-            margin-bottom: 47px;
           }
           header{
             margin: 21px 0 14px;
           }
           .secondary_cta{
-            margin-bottom: 5%;
+            margin-bottom: 6%;
+          }
+        }
+        @media ( max-height: 732px ){
+          .primary_cta {
+            margin: 6% 0 6%;
+          }
+          .form {
+            margin: 3% 0;
+          }
+          header{
+            margin: 21px 0 14px;
+          }
+          .secondary_cta{
+            margin-bottom: 6%;
           }
         }
         @media ( max-height: 620px ){
           .primary_cta {
-            margin: 4% 0 4%;
+            margin: 5% 0 5%;
           }
           .form {
             margin: 3% 0 3%;
@@ -565,7 +576,7 @@
             margin: 16px 0 9px;
           }
           .secondary_cta{
-            margin-bottom: 4%;
+            margin-bottom: 5%;
           }
         }
         /* @media (min-width: 768px) and (max-width: 1024px) {
