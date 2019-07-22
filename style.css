@@ -610,3 +610,15 @@
             padding: 0 1%;
           }
         }
+        /** laptop and desktop **/
+        @media (min-width: 1025px){
+          .primary_cta {
+            margin: 40px 0 40px;
+          }
+          header{
+            margin: 21px 0 14px;
+          }
+          .secondary_cta{
+            margin-bottom: 60px;
+          }
+        }
