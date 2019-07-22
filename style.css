@@ -536,7 +536,7 @@
       
         @media ( max-height: 732px ){
           .primary_cta {
-            margin: 4% 0 4%;
+            margin: 5% 0 5%;
           }
           .form {
             margin: 3% 0;
@@ -548,12 +548,12 @@
             margin: 21px 0 14px;
           }
           .secondary_cta{
-            margin-bottom: 4%
+            margin-bottom: 5%;
           }
         }
         @media ( max-height: 620px ){
           .primary_cta {
-            margin: 3% 0 3%;
+            margin: 4% 0 4%;
           }
           .form {
             margin: 3% 0 3%;
@@ -565,7 +565,7 @@
             margin: 16px 0 9px;
           }
           .secondary_cta{
-            margin-bottom: 3%;
+            margin-bottom: 4%;
           }
         }
         /* @media (min-width: 768px) and (max-width: 1024px) {
