@@ -10,11 +10,11 @@
       padding:0;
       height:100%;
     }
-    .content{
+    body{
       margin:0;
       padding:0;
-      padding-bottom:60px;
-      min-height:calc(100% - 60px);
+      padding-bottom:80px;
+      min-height:calc(100% - 80px);
       position:relative;
     }
     body {
@@ -541,7 +541,6 @@
         .sticky{
           margin:0;
           padding:0;
-          height:60px;
           width:100%;
           position: absolute;
           bottom: 0;
