@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" class="no-js">
 <head>
-    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1, shrink-to-fit=yes "/>
-    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1, shrink-to-fit=no "/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel="shortcut icon" href="assets/images/favicon.ico">
     <title>Renault</title>
     <!-- <link rel="stylesheet" href="style.min.css" /> -->
@@ -90,12 +90,6 @@
                             </a>
                         </div>
                         <div class="primary-btn-in">
-                            <a href="https://www.renault.co.in/book-a-test-drive.html?utm_source=web%20browser&utm_medium=Book%20a%20test%20drive&utm_campaign=TOI" target="_blank" class="btn">
-                                <img src="assets/images/primary/book-test-drive.png" alt="Book a Test Drive" />
-                                <p>Book a Test<br/> Drive</p>
-                            </a>
-                        </div>
-                        <div class="primary-btn-in">
                             <a href="https://www.google.com/maps?safe=active&rlz=1C1CHBF_enIN838IN838&q=renault%20duster%20find%20dealer%20near%20me&um=1&ie=UTF-8&sa=X&ved=0ahUKEwjBx_Kk1LvjAhVWfH0KHUtsAQYQ_AUIEygE&utm_source=web%20browser&utm_medium=Find%20Dealer&utm_campaign=TOI" target="_blank" class="btn">
                                 <img src="assets/images/primary/locate-showroom.png" alt="Locate Showroom" />
                                 <p>Locate<br/> Showroom</p>
@@ -121,6 +115,9 @@
                     <div class="toggle-sec">
                         <div class="toggle-icon"><img src="assets/images/toggle-btn.png" class="toggle-icon" alt="Toggle" /></div>
                         <div class="toggle-pointer"><img src="assets/images/toggle-pointer.png" class="toggle-pointer" alt="More Options" /></div>
+                        <div class="title">
+                            <h2><span>Social Media & More</span></h2>
+                        </div>
                     </div>   
                     <div class="secondary-btn" style="display: none;">
                         <div class="secondary-btn-in">
@@ -158,34 +155,15 @@
                                 <span><img src="assets/images/secondary/consumer-forum.png" alt="Consumer Forum" /></span>
                             </a>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="section form">
-                <div class="container">
-                    <div class="form_outer">
-                        <div class="toggle-sec">
-                            <div class="toggle-down">
-                                <img src="assets/images/toggle-down.png" class="toggle-arrwUp" alt="Send Enquiry Toggle" />
-                                <img src="assets/images/toggle-down2.png" class="toggle-arrwDn" alt="Send Enquiry Toggle" />
-                            </div>
-                            <div class="title">
-                                <h2><span>Contact Us Now</span></h2>
-                            </div>
+                        <div class="secondary-btn-in">
+                            <a href="https://webar.wowso.me/userstoriestvs" target="_blank" class="btn">
+                                <span><img src="assets/images/secondary/car-in-ar.png" alt="See Car in AR" /></span>
+                            </a>
                         </div>
-                        <div class="form-in" style="display: none;">
-                            <p class="desc">Fill details below for enquiry</p>
-                            <!--[if lte IE 8]>
-                            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
-                            <![endif]-->
-                            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-                            <script>
-                                hbspt.forms.create({
-                                    portalId: "1635524",
-                                    formId: "889924cd-ada8-4aa8-aa84-33dcaa6143b4"
-                                });
-                                setTimeout(function(){$('input').attr("autocomplete", "off"); }, 500);
-                            </script>
+                        <div class="secondary-btn-in">
+                            <a href="https://webar.wowso.me/userstoriesvideo" target="_blank" class="btn">
+                                <span><img src="assets/images/secondary/talk-to-rana.png" alt="Talk to Rana" /></span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -207,42 +185,45 @@
         },500);
 
         $(document).ready(function(){
-            $(".form .toggle-sec").click(function(){
-                $(".form-in").slideToggle( "slow" );
-                $(".form").toggleClass("open");
-                if($(".form").hasClass('open')){
-                    $('footer').removeClass('sticky');
-                }
-            });
-            $(".form").click(function(){
-                if($(".form").hasClass('open')){
-                    $('footer').removeClass('sticky');
-                }
-                else if($(".secondary_cta").hasClass('open')){
-                    $('footer').removeClass('sticky');
-                }
-                else{
-                    $('footer').addClass('sticky');
-                }
-            });
+            // $(".form .toggle-sec").click(function(){
+            //     $(".form-in").slideToggle( "slow" );
+            //     $(".form").toggleClass("open");
+            //     if($(".form").hasClass('open')){
+            //         $('footer').removeClass('sticky');
+            //     }
+            // });
+            // $(".form").click(function(){
+            //     if($(".form").hasClass('open')){
+            //         $('footer').removeClass('sticky');
+            //     }
+            //     else if($(".secondary_cta").hasClass('open')){
+            //         $('footer').removeClass('sticky');
+            //     }
+            //     else{
+            //         $('footer').addClass('sticky');
+            //     }
+            // });
             $(".secondary_cta .toggle-sec").click(function(){
                 $(".secondary-btn").slideToggle( "slow" );
                 $(".secondary_cta").toggleClass("open");
                 if($(".secondary_cta").hasClass('open')){
                     $('footer').removeClass('sticky');
                 }
-            });
-            $(".secondary_cta").click(function(){
-                if($(".secondary_cta").hasClass('open')){
-                    $('footer').removeClass('sticky');
-                }
-                else if($(".form").hasClass('open')){
-                    $('footer').removeClass('sticky');
-                }
                 else{
                     $('footer').addClass('sticky');
                 }
             });
+            // $(".secondary_cta").click(function(){
+            //     if($(".secondary_cta").hasClass('open')){
+            //         $('footer').removeClass('sticky');
+            //     }
+            //     else if($(".form").hasClass('open')){
+            //         $('footer').removeClass('sticky');
+            //     }
+            //     else{
+            //         $('footer').addClass('sticky');
+            //     }
+            // });
         });  
     </script>
     

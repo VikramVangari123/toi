@@ -224,9 +224,18 @@
         margin-right: 5px;
         margin-left: 1px;
       }
+      .secondary_cta .title{
+        color: #fff;
+      }
+      .secondary_cta{
+        margin-bottom: 30px
+      }
       @media (min-width: 540px) {
         .primary-btn .primary-btn-in .btn{
           max-width: 180px;
+        }            
+        .secondary-btn-in .btn span img{
+          width: 130px;
         }
         .video .play-btn img {
           width: 70px;
@@ -256,6 +265,9 @@
       }
       .secondary-btn-in  .btn{
         position: relative;
+      }
+      .secondary-btn-in .btn span img{
+        width: 190px;
       }
 
       /**** form *****/
@@ -486,6 +498,9 @@
         .primary-btn .primary-btn-in:nth-child(4), .primary-btn .primary-btn-in:nth-child(5),
         .primary-btn .primary-btn-in:nth-child(6) {
           margin: 0;
+        }        
+        .secondary-btn-in .btn span img{
+          width: 150px;
         }
         .footer_logo{
           margin-top: -23px;
@@ -513,15 +528,15 @@
 
       @media (max-width: 1024px){
         .sticky{
-          position: absolute;
-          bottom: 0;
+          position: absolute !important;
+          bottom: 0 !important;
         }
       }
 
       
         @media ( max-height: 732px ){
           .primary_cta {
-            margin: 2% 0 2%;
+            margin: 4% 0 4%;
           }
           .form {
             margin: 3% 0;
@@ -530,12 +545,15 @@
             margin-bottom: 47px;
           }
           header{
-            margin: 11px 0 4px;
+            margin: 21px 0 14px;
+          }
+          .secondary_cta{
+            margin-bottom: 4%
           }
         }
         @media ( max-height: 620px ){
           .primary_cta {
-            margin: 2% 0 2%;
+            margin: 3% 0 3%;
           }
           .form {
             margin: 3% 0 3%;
@@ -544,7 +562,10 @@
             margin-bottom: 34px;
           }
           header{
-            margin: 11px 0 4px;
+            margin: 16px 0 9px;
+          }
+          .secondary_cta{
+            margin-bottom: 3%;
           }
         }
         /* @media (min-width: 768px) and (max-width: 1024px) {
